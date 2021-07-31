@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <header> 
+        <meta charset="UTF-8">
+        <link href="css/ramiel.css" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="img/icon.png">
+		<title>Ramiel</title>
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://ramiel.app/">
+        <meta property="og:title" content="Ramiel">
+        <meta property="og:description" content="An open-source, multipurpose macOS utility for checkm8-vulnerable iOS/iPadOS devices">
+        <meta property="og:image" content="https://ramiel.app/img/ramiel.jpg">
+    </header>
+    <body>
+        <div id="top" style="text-align: center;">
+            <h1>Ramiel.app</h1>
+            <img src="img/ramiel.jpg" alt="Ramiel" style="width:128px; height:128px;">
+            <h2>An open-source, multipurpose macOS utility for checkm8-vulnerable iOS/iPadOS devices</h2>
+            <h3><a href="https://twitter.com/moski_dev" target="_blank">By @moski_dev</a></h3>
+            <p>Use Ramiel to tether boot your checkm8-vulnerable iOS/iPadOS devices. Ramiel supports booting iOS 10 > 14, along with<br>support for booting dualbooted devices into their second OS (via <a href="https://repo.dynastic.co/package/divise" target="_blank">Divisé</a>).</p>
+            <p>Ramiel has many features including an SHSH dumper via an SSH ramdisk, the ability to apply kernel patches for AMFI and/or<br>AMSD/ASBS, support for custom bootlogos, an APNonce (generator) setter and many more useful features!</p>
+            <p>Ramiel is <a href="https://github.com/MatthewPierson/Ramiel" target="_blank">completely open source</a>, feel free to create pull requests to fix bugs or add features! Do be careful if you<br>choose to use a 3rd party copy of Ramiel as the safety of those copies will not be verified. To be safe, ensure you only download Ramiel from this site or Ramiel's GitHub page!</p>
+        </div>
+        <div id="dl">
+            <button type="button" class="collapsible"><h1>Downloads</h1></button>
+            <div class="content">
+                <br>
+				<h2>Version 1.1.0 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.1.0/Ramiel_1.1.0.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.1.0.dmg sha256: 17a37e3a88cdcc3a82855b6442e87c500f1ed27f99d684b7b1c28302f824189b</p>
+                    <p>Ramiel binary sha256: da5d8090a7e0a9c13e7de80450bd8d34701db7fa02a77ae8d727f60f30992941</p>
+                    <div>
+                        <h4>v1.1.0 Changelog</h4>
+                        <p class="patchNotes">Store firmware keys locally instead of scraping theiphonewiki every time</p>
+						<p class="patchNotes">Add ability to backup all firmware keys for a device from theiphonewiki</p>
+						<p class="patchNotes">Add support for iOS 7/8/9</p>
+						<p class="patchNotes">Add support for iOS 14.5 and up (Huge thank you to Dayton!)</p>
+						<p class="patchNotes">Fix potential issues with SSH Ramdisk</p>
+						<p class="patchNotes">Many other bug fixes + optimizations</p>
+                    </div> 
+                </h2>
+				<hr>
+				<h2>Version 1.0.4 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.0.4/Ramiel_1.0.4.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.0.4.dmg sha256: 09ead2840653434165ec11ed5a6d59aded3373942bfe9e6ca20f42dfb02a0413</p>
+                    <p>Ramiel binary sha256: ff02c91b056f3a0ad57dc708f5909a7f85b8fc5be5f988b0ecadd25260bb0357</p>
+                    <div>
+                        <h4>v1.0.4 Changelog</h4>
+                        <p class="patchNotes">Fix Ramiel crashing on launch on systems that didn't have openssl installed with Brew</p>
+                    </div> 
+                </h2>
+				<hr>
+				<h2>Version 1.0.3 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.0.3/Ramiel_1.0.3.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.0.3.dmg sha256: e4365c69c5aceb53fd3ca649026212ecd6394dcb10d6f23d0677924593a3c124</p>
+                    <p>Ramiel binary sha256: 044b52cfab11e5c964a8022e6209b9a0d1cd7df29ec7b63c631bd0a1d41004b2</p>
+                    <div>
+                        <h4>v1.0.3 Changelog</h4>
+                        <p class="patchNotes">Remove libimobiledevice dependency</p>
+						<p class="patchNotes">Fix SHSH dumping/SSH ramdisk booting</p>
+						<p class="patchNotes">Add better error handling when attempting to fetch firmware keys</p>
+						<p class="patchNotes">Update issues link to include default formatting</p>
+                    </div> 
+                </h2>
+				<hr>
+				<h2>Version 1.0.2 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.0.2/Ramiel_1.0.2.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.0.2.dmg sha256: 735b2f637d94affdfa2c57f914a2ae77362a9665e5d2dfd0e420de3e313cdcd3</p>
+                    <p>Ramiel binary sha256: 76474a1c6b5f9b36e27d834ba10ff51a2ff8b462e8350e64d681d62d16a2d1a0</p>
+                    <div>
+                        <h4>v1.0.2 Changelog</h4>
+                        <p class="patchNotes">Adds ability to check for updates to Ramiel on launch</p>
+                        <p class="patchNotes">Add timeout checks for when checkm8 hangs infinitely when exploiting a device (Also for Big Sur 11.3 where checkm8 is broken)</p>
+                    </div> 
+                </h2>
+				<hr>
+				<h2>Version 1.0.1 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.0.1/Ramiel_1.0.1.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.0.1.dmg sha256: 38a2646dccb0023405d9158e684298145ec2509673b7a554d0c27231435e11e4</p>
+                    <p>Ramiel binary sha256: b5b8e954d56384d3b9c5dcb4d8cd8b149b2176251e0597e7b1e98f6d8182ccae</p>
+                    <div>
+                        <h4>v1.0.1 Changelog</h4>
+                        <p class="patchNotes">Prevent setup window showing on each launch</p>
+                        <p class="patchNotes">Fix Big Sur Brew binary checks (Thanks @ConsoleLogLuke!)</p>
+                    </div> 
+                </h2>
+				<hr>
+                <h2>Version 1.0.0 - <a href="https://github.com/MatthewPierson/Ramiel/releases/download/v1.0.0/Ramiel_1.0.0.dmg" target="_blank">Download</a>
+                    <p>Ramiel_1.0.0.dmg sha256: ad52f7540811f005f3fd643560dc747e5f7524bf4d2005d450a5e3d59228705e</p>
+                    <p>Ramiel binary sha256: 9870a820157e010aa758d728d81985be7029b54cc5fd07309f1751d1b65eaa7c</p>
+                    <div>
+                        <h4>v1.0.0 Changelog</h4>
+                        <p class="patchNotes">Initial release</p>
+                    </div> 
+                </h2>
+            </div>
+        </div>
+        <div id="faq" style="text-align: center;">
+            <button type="button" class="collapsible"><h1>FAQs</h1></button>
+            <div class="content">
+                <h2>What is Ramiel?</h2>
+                <p>See above.</p>
+                <h2>Can I use Ramiel on Windows/Linux/Other OS's?</h2>
+                <p>No, and support for any OS other then macOS will never happen sorry.</p>
+                <h2>When I open Ramiel I get a message about the app being "damaged".</h2>
+                <p>Open Terminal, and run "xattr -cr /Applications/Ramiel.app" then try again. You may have to right click the app and pick "Open" for it to open properly after doing this.</p>
+                <h2>What devices are supported by Ramiel?</h2>
+                <p>Any checkm8 compatible device, so iPhones/iPads/iPod Touches with A7, A8(X), A9(X), A10(X) and A11 CPUs will work with Ramiel.</p>
+                <h2>Can I boot into a dualbooted devices second OS with Ramiel?</h2>
+                <p>Yes, Ramiel allows for the booting of dualbooted devices, even multibooted devices.</p>
+                <h2>Can I use Ramiel with 32-Bit iOS devices/pre-iOS 10 firmwares?</h2>
+                <p>You can use Ramiel on iOS 7/8/9 as of version 1.1.0! These firmwares are fully supported by Ramiel, however 32-Bit Devices are still not supported and will not be.</p>
+                <h2>Does Ramiel allow me to untether my tethered dualboot/downgrade?</h2>
+                <p>No, it never will.</p>
+				<h2>Everytime I try to boot iOS 13.x (dualboot) with a 14.x main it just hangs on the Apple logo?</h2>
+                <p>This is normal, 14.x main with 13.x second OS's take an extremely long time to boot, sometimes up to 10-15 minutes. Just be patient!</p>
+                <h2>Where can I find Ramiel's source code?</h2>
+                <p style="padding-bottom: 35px;">You can find that <a href="https://github.com/MatthewPierson/Ramiel" target="_blank">here</a></p>
+            </div>
+        </div>
+        <div id="me" style="text-align: center;">
+            <button type="button" class="collapsible"><h1>My Links</h1></button>
+            <div class="content">
+                <br>
+                <br>
+                <a href="https://github.com/MatthewPierson/" target="_blank"><img src="img/GitHub-Mark-Light-120px-plus.png" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>GitHub</h2>
+                <a href="https://twitter.com/moski_dev" target="_blank"><img src="img/moski.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Twitter</h2>
+                <br>
+            </div>
+        </div>
+        <div id="credits" style="text-align: center;">
+            <button type="button" class="collapsible"><h1>Credits</h1></button>
+            <div class="content">
+                <br>
+                <br>
+                <a href="https://twitter.com/moski_dev" target="_blank"><img src="img/moski.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Me (Ramiel)</h2>
+                <a href="https://twitter.com/axi0mX" target="_blank"><img src="img/axi0mX.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>axi0mX (checkm8/ipwndfu)</h2>
+				<a href="https://twitter.com/xerub" target="_blank"><img src="img/xerub.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+				<h2>xerub (img4lib)</h2>
+                <a href="https://twitter.com/tihmstar" target="_blank"><img src="img/tihmstar.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>tihmstar (img4tool)</h2>
+                <a href="https://twitter.com/daytonhasty" target="_blank"><img src="img/dayt0n.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Dayt0n (kairos)</h2>
+                <a href="https://twitter.com/libimobiledev" target="_blank"><img src="img/libimobiledevice.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>libimobiledevice Team (libirecovery)</h2>
+                <a href="https://twitter.com/LinusHenze" target="_blank"><img src="img/linus.png" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Linus Henze (Fugu)</h2>
+                <a href="https://twitter.com/npupyshev" target="_blank"><img src="img/realnp.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>realnp (ibootim)</h2>
+                <a href="https://twitter.com/dora2ios" target="_blank"><img src="img/dora.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Dora (iPwnder32)</h2>
+                <a href="https://github.com/0x7ff" target="_blank"><img src="img/0x7ff.png" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>0x7ff (eclipsa)</h2>
+                <img src="img/linus.png" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;">
+                <h2>akayn (A11 ipwndfu patches)</h2>
+                <a href="https://twitter.com/mcg29_" target="_blank"><img src="img/mcg29_.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>mcg29_ (AMFI kernel patching compare script)</h2>
+                <a href="https://twitter.com/Ralph0045" target="_blank"><img src="img/linus.png" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>Ralph0045 (Kernel64Patcher)</h2>
+                <a href="https://twitter.com/exploit3dguy" target="_blank"><img src="img/exploit3d.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>exploit3d (AppleMesaSEPDriver Patches/Automation)</h2>
+                <a href="https://twitter.com/NotHereForTheD1" target="_blank"><img src="img/dong.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>NotHereForTheDong (AppleMesaSEPDriver Patch)</h2>
+                <a href="https://twitter.com/rA9_main" target="_blank"><img src="img/ra9.jpg" alt="Twitter" style="width:126px; height:126px; border-radius: 50%;"></a>
+                <h2>rA9 (Tester for Ramiel)</h2>
+                <br>
+            </div>
+        </div>
+		<div id="disc">
+            <button type="button" class="disc" onclick="window.location.href='https://discord.gg/yhK4hfb6n8'"><img src="img/Discord-Logo-Color.png" style="width:150px;height:150px;"><h1>Join Support Discord</h1></button>
+        </div>
+    </body>
+</html>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+</script>
