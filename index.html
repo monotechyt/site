@@ -47,6 +47,13 @@
             text-align: left;
             
         }
+        h9 {
+            color : rgba(230, 230, 230, 1);
+            font-size: 250%;
+            font-family: sans-serif;
+            text-align: left;
+            
+        }
         h4 {
             color : rgba(230, 230, 230, 1);
             font-size: 100%;
@@ -130,13 +137,13 @@
             <h7>What is LeetDown?</h7>
             <table style="margin-left: 1em; margin-top: 1em;">
                 <tr>
-                    <td style="width: 180px;">
+                    <td style="width: 10px;">
                         <img src="https://avatars.githubusercontent.com/u/3584568?s=200&v=4" style="width:100px; height:100px; vertical-allign: middle;">
                         </div>
                     </td>
                     <td style="width: 1em;"></td>
                     <td style="width: 250px;text-align:left;">
-                        <h6>LeetDown is a GUI app powered by libimobiledevice that allows downgrading compatible A6 and A7 devices to OTA signed firmwares.</h6>
+                        <h6>LeetDown is a GUI app powered by libimobiledevice that allows downgrading compatible A6 and A7 iPhones/iPads to OTA signed firmwares.</h6>
                     </td>
                 </tr>
             </table>
@@ -179,8 +186,43 @@
             <br>
             <br>
             <br>
+            <br>
+            <br>
             <h7>Version Changelog</h7>
-            
+            <br>
+            <br>
+            <table style="margin-left: 1em; margin-top: 1em;">
+                <tr>
+                    <td style="width: 1em;"></td>
+                    <td style="width: 800px;text-align:left;">
+                        <h9>Version 2.1</h9>
+                        <h6><li>LeetDown now has a settings view with an option to enable debugging of the app and futurerestore for troubleshooting issues easier.</li></h6>
+                        <h6><li>LeetDown now asks if you want to save a copy of the OTA blob locally, in case apple decides to unsign OTA firmwares some day.</li></h6>
+                        <h6><li>LeetDown can now download an iPSW for the connected device automatically, if you're unsure about which iPSW to use.</li></h6>
+                        <h6><li>LeetDown now checks if the user picked iPSW BuildManifest matches with destination firmware of the connected device.</li></h6>
+                        <h6><li>Fixes bootlogo scaling on iPads (I don't have any A7 iPads to test my changes so this hopefully works).</li></h6>
+                        <h6><li>Stability and UI improvements.</li></h6>
+                        <br>
+                        <br>
+                        <h9>Version 2.0.1</h9>
+                        <h6><li>LeetDown now uses standard macOS tmp directory (NSTemporaryDirectory) to extract the iPSW (requested by m1stadev).</li></h6>
+                        <h6><li>Added a new view called "DFU Helper" which aims to make entering DFU mode easier for inexperienced users.</li></h6>
+                        <h6><li>Slight UI, app icon and bootlogo changes.</li></h6>
+                        <h6><li>Redesigned DMG window.</li></h6>
+                        <br>
+                        <br>
+                        <h9>Version 2.0</h9>
+                        <h6>LeetDown 2.0 is a completely rewritten version of LeetDown with many bug fixes and stability improvements.</h6>
+                        <h6>Changes include:</h6>
+                        <h6><li>Complete rewrite of the app in ObjC with proper libirecovery integration to handle the process much better.</li></h6>
+                        <h6><li>Adds (experimental) M1 Mac support.</li></h6>
+                        <h6><li>LeetDown no longer needs any dependencies installed on the host system to run.</li></h6>
+                        <h6><li>Less storage will be used when downgrading (nearly ~5GBs of less storage).</li></h6>
+                        <h6><li>Slight UI and app icon changes.</li></h6>
+                        <h6><li>macOS will no longer quarantine LeetDown, thanks to Matty :)</li></h6>
+                    </td>
+                </tr>
+            </table>
             
             <h6>LeetDown is completely opensource <a href="https://github.com/ra9stuff/LeetDown" target="_blank"> on GitHub. </a></h4>
 
